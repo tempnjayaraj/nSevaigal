@@ -1,0 +1,159 @@
+<html>
+<head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1505/1505516.png">
+    <title>nSevaigal - Login</title>
+    <style>
+        div.loginForm{
+            position: relative;
+            top:200;
+            width:340;
+            padding: 20;
+            background-color: white;
+            opacity: 1;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: bold;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            right:60px;
+            margin-left: auto;
+            border-radius: 10px;
+        }
+        span.fieldKey{
+            left: 10;
+            padding: 2px;
+            color:black;
+            font-size: 20px;
+        }
+        span.header{
+            color: #23159c;
+            font-size: 30px;
+        }
+        img.back{
+            position: absolute;
+            width: 100%;
+            height:100%;
+        }
+        p.bigText{
+            position: absolute;
+            width: 500;
+            height:75%;
+            right:0px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            /* background-image: url("https://static.vecteezy.com/system/resources/previews/006/327/095/original/dark-blue-gradient-colors-abstract-blurred-background-for-landing-page-free-vector.jpg"); */
+            color:white;
+            text-shadow: 2px 2px 4px #000000;
+        }
+        input.text{
+            height:35px;
+            padding:1px;
+        }
+        input.button1 {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            background-color: #23159c; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            width:120px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .button1:hover {
+            background-color: white;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: bold;
+            color: #23159c;
+        }
+        .button2 {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            background-color: white; /* Green */
+            border: none;
+            color: #23159c;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            width:120px;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .button2:hover {
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-weight: bold;
+            background-color: #23159c;
+            color: white;
+        }
+        input[type=text]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=text]:focus {
+            border: 3px solid #555;
+        }
+        input[type=password]{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=password]:focus {
+            border: 3px solid #555;
+        }
+    </style>
+    <script>
+        var i=2;
+        function changeImages(){
+            document.getElementById("imageS").src = './Images/'+i+'.jpg';
+            i++;
+            if(i==4){
+                i=1;
+            }
+        }
+    </script>
+</head>
+<body onload="setInterval(changeImages,3000)">
+    <img class="back" id="imageS" src="./Images/1.jpg"/>
+    
+        <div class="loginUI">
+        <p class="bigText"><font color="yellow">n</font>Sevaigal<font color="yellow">.</font></p>
+        <div class="loginForm">
+            <form action="./Pages/main.html">
+                <center>
+                    <span class="header">Welcome, Please login</span><br><br>
+                    <span class="fieldKey">Username:</span><input class="text" title="Hello" type="text" placeholder="Enter your username"/><br>
+                    <span class="fieldKey">Password:</span><input class="text" type="password" placeholder="Enter your password"/><br><br>
+                    <input class="button1" type="submit" value="Login"/>
+                    <a href="./Pages/create.html" style="width:120px" class="button2">Sign Up</a><br><br>
+                    <a href="">Forgot password?</a>
+                </center>
+            </form>
+        </div>
+    </div>
+</body>    
+</html>

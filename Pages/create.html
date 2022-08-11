@@ -1,0 +1,218 @@
+<html>
+<head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1505/1505516.png">
+    <title>nSevaigal - Register</title>
+    <link rel="stylesheet" href="../styles/createUser.css">
+    <script src="../script/createUser.js"></script>
+</head>
+<body onload="setInterval(changeImages,3000)">
+    <!-- <img class="back" id="imageS" src="../Images/1.jpg"/> -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p id="pop">Some text in the Modal..</p>
+        </div>
+    </div> 
+    <div class="loginForm">
+        <form id="inputForm" action="../Pages/main.html" onsubmit="return validateForm()" method="post">
+            <span class="header">Please Register to use our nSevaigal services</span><br><br>
+            <span class="fieldKey">First Name:</span><input id ="firstName" class="text" title="Hello" type="text" placeholder="Enter your first name"/>
+            <span class="fieldKey">Last Name:</span><input id ="secondName"class="text" title="Hello" type="text" placeholder="Enter your last name"/><br>
+            <span class="fieldKey">Date of Birth: </span><input class="text" id ="dob" title="Hello" type="date"/>
+            <span class="fieldKey">Gender: </span><input type="radio" id="sex" name="gender" value="Male"><label for="sex">Male</label><input type="radio" id="sex" name="gender" value="Female"><label for="sex">Female</label><br>
+            <span class="fieldKey">Phone Number:</span><input class="text"id ="phoneNumber" title="Hello" type="text" placeholder="+91 xxxxx xxxxx"/>
+            <span class="fieldKey">Email-ID:</span><input class="text" id ="emailID" title="Hello" type="text" placeholder="+91 xxxxx xxxxx"/><br>
+            <span class="fieldKey">Please enter Password:</span><input id ="psw" class="text" type="password" placeholder="Enter your password"/><br>
+            <span class="fieldKey">Re-enter  Password:</span><input id ="psw2" class="text" type="password" placeholder="Enter your password"/><br>
+            <span class="fieldKey">Door Number</span><input id ="doorNumber" class="text" type="text" placeholder="Door number, Street Name"/>
+            <span class="fieldKey">Street Name</span><input id ="streetName" class="text" type="text" placeholder="Locality Name"/><br>
+            <span class="fieldKey">Village / Town Name</span><input id ="village"  class="text" type="text" placeholder="Locality Name"/><br>
+            <span id="statel" class="fieldKey">State</span><select name="state" id ="state" ><option value="">-Select Your State-</option><option value="TN">Tamil Nadu</option><option value="others">Others</option></select> 
+            <span id="districtl" class="fieldKey">District</span><select id="district" name="District-List">
+                <option value="">Select District</option>
+                <option value="Ariyalur">Ariyalur</option>
+                <option value="Chengalpattu">Chengalpattu</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Cuddalore">Cuddalore</option>
+                <option value="Dharmapuri">Dharmapuri</option>
+                <option value="Dindigul">Dindigul</option>
+                <option value="Erode">Erode</option>
+                <option value="Kallakurichi">Kallakurichi</option>
+                <option value="Kanchipuram">Kanchipuram</option>
+                <option value="Kanyakumari">Kanyakumari</option>
+                <option value="Karur">Karur</option>
+                <option value="Krishnagiri">Krishnagiri</option>
+                <option value="Madurai">Madurai</option>
+                <option value="Nagapattinam">Nagapattinam</option>
+                <option value="Namakkal">Namakkal</option>
+                <option value="Nilgiris">Nilgiri</option>
+                <option value="Perambalur">Perambalur</option>
+                <option value="Pudukkottai">Pudukkottai</option>
+                <option value="Ramanathapuram">Ramanathapuram</option>
+                <option value="Ranipet">Ranipet</option>
+                <option value="Salem">Salem</option>
+                <option value="Sivaganga">Sivaganga</option>
+                <option value="Tenkasi">Tenkasi</option>
+                <option value="Thanjavur">Thanjavur</option>
+                <option value="Theni">Theni</option>
+                <option value="Thoothukudi">Thoothukudi</option>
+                <option value="Tiruchirappalli">Tiruchirappalli</option>
+                <option value="Tirunelveli">Tirunelveli</option>
+                <option value="Tirupathur">Tirupathur</option>
+                <option value="Tiruppur">Tiruppur</option>
+                <option value="Tiruvallur">Tiruvallur</option>
+                <option value="Tiruvannamalai">Tiruvannamalai</option>
+                <option value="Tiruvarur">Tiruvarur</option>
+                <option value="Vellore">Vellore</option>
+                <option value="Viluppuram">Viluppuram</option>
+                <option value="Virudhunagar">Virudhunagar</option>
+            </select><br>
+            <span class="fieldKey">PIN Code</span><input class="text" id ="PINCode"  type="text" placeholder="6xx   xxx"/><br><br>
+            
+            <!-- <span class="fieldKey">Country</span><select name="cars" id="cars"><option value="">-Select Your Country-</option><option value="chn">Chennai</option><option value="tvr">Tiruvallur</option><option value="cgpl">Chengalpattu</option></select><br><br> -->
+            <label class="container">I wish to work as a partner<input id="isWorker" type="checkbox" onchange='worker()'/><span class="checkmark"></span></label>
+            <div id="worker">
+            <div id="primaryWork">
+                <span class="fieldKey">Primary Occupation</span><select name="occupation" id="occu1" onchange="changeOccu1()"><option value="">-Select an Occupation-</option><option value="painter">Painter</option><option value="electrician">Electrician</option><option value="plumber">Plumber</option></select><br>
+                <blockquote>
+                <div id="occu-plumber-1">
+                    <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Household Works</label>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> Full house Plumbing design</label>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> WaterPump Setup</label><br><br>
+                    <span class="fieldKey">Work-Nature: </span><br><br>
+                    <label class="container1">I have worked as a free lancer<input id="FPl1" type="checkbox" onchange='showAdditionalBox("fexpPl1")'/><span class="checkmark"></span></label>
+                    <div id="fexpPl1"><span class="fieldKey">| Exp: </span><input type="number" id="quantity" style="width:40px" name="quantity" min="0" max="30"><label for="quantity"> years </label><input type="number" id="quantity" style="width:40px" name="quantity" min="0" max="11"><label for="quantity"> months</label></div><br><br> 
+                    <label class="container1">I have worked in a Company<input id="CPl1" type="checkbox" onchange='showAdditionalBox("cexpPl1")'/><span class="checkmark"></span></label>
+                    <div id="cexpPl1"><span class="fieldKey">| Company Name:</span><input id ="cname" class="text" title="Hello" type="text" placeholder="Enter your first name"/><span class="fieldKey">| Exp: </span><input type="number" id="quantity" style="width:40px" name="quantity" min="0" max="30"><label for="quantity"> years </label><input type="number" id="quantity" style="width:40px" name="quantity" min="0" max="11"><label for="quantity"> months</label></div><br><br>
+                </div>
+                <div id="occu-painter-1">
+                    <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Wall Painting</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Artistic Painting</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Taller Building Painting</label><br><br>
+                    <span class="fieldKey">Work-Nature: </span><br><br>
+                    <label class="container1">I have worked as a free lancer<input id="FPa1" type="checkbox" onchange='showAdditionalBox("fexpPa1")'/><span class="checkmark"></span></label>
+                    <div id="fexpPa1"><span class="fieldKey">| Exp: </span><input class="text" id="FPa1y" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input id="FPa1m" class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br> 
+                    <label class="container1">I have worked in a Company<input id="CPa1" type="checkbox" onchange='showAdditionalBox("cexpPa1")'/><span class="checkmark"></span></label>
+                    <div id="cexpPa1"><span class="fieldKey">| Company Name:</span><input id ="cname" class="text" title="Hello" type="text" placeholder="Enter your first name"/><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br>
+                </div>
+                <div id="occu-electrician-1">
+                    <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Full House Wiring</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Household Appliances Repair</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> New Fitting Installation</label><br><br>
+                    <span class="fieldKey">Work-Nature: </span><br><br>
+                    <label class="container1">I have worked as a free lancer<input id="FEl1" type="checkbox" onchange='showAdditionalBox("fexpEl1")'/><span class="checkmark"></span></label>
+                    <div id="fexpEl1"><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br> 
+                    <label class="container1">I have worked in a Company<input id="CEl1" type="checkbox" onchange='showAdditionalBox("cexpEl1")'/><span class="checkmark"></span></label>
+                    <div id="cexpEl1"><span class="fieldKey">| Company Name:</span><input id ="cname" class="text" title="Hello" type="text" placeholder="Enter your first name"/><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br>
+                </div>
+            </blockquote>
+            </div>
+            <div id="secondaryWork">
+                <span class="fieldKey">Secondary Occupation</span><select name="occupation" id="occu2" onchange="changeOccu2()"><option value="">-Select an Occupation-</option><option value="painter">Painter</option><option value="electrician">Electrician</option><option value="plumber">Plumber</option></select><br>
+                <blockquote><div id="occu-plumber-2">
+                    <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Household Works</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Full house Plumbing design</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> WaterPump Setup</label><br><br>
+                    <span class="fieldKey">Work-Nature: </span><br><br>
+                    <label class="container1">I have worked as a free lancer<input type="checkbox" onchange='showAdditionalBox("fexpPl2")'/><span class="checkmark"></span></label>
+                    <div id="fexpPl2"><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br> 
+                    <label class="container1">I have worked in a Company<input type="checkbox" onchange='showAdditionalBox("cexpPl2")'/><span class="checkmark"></span></label>
+                    <div id="cexpPl2"><span class="fieldKey">| Company Name:</span><input id ="cname" class="text" title="Hello" type="text" placeholder="Enter your first name"/><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br>
+                </div>
+                <div id="occu-painter-2">
+                    <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Wall Painting</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Artistic Painting</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Taller Building Painting</label><br><br>
+                    <span class="fieldKey">Work-Nature: </span><br><br>
+                    <label class="container1">I have worked as a free lancer<input type="checkbox" onchange='showAdditionalBox("fexpPa2")'/><span class="checkmark"></span></label>
+                    <div id="fexpPa2"><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br> 
+                    <label class="container1">I have worked in a Company<input type="checkbox" onchange='showAdditionalBox("cexpPa2")'/><span class="checkmark"></span></label>
+                    <div id="cexpPa2"><span class="fieldKey">| Company Name:</span><input id ="cname" class="text" title="Hello" type="text" placeholder="Enter your first name"/><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br>
+
+                </div>
+                <div id="occu-electrician-2">
+                    <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Full House Wiring</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Household Appliances Repair</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> New Fitting Installation</label><br><br>
+                    <span class="fieldKey">Work-Nature: </span><br><br>
+                    <label class="container1">I have worked as a free lancer<input type="checkbox" onchange='showAdditionalBox("fexpEl2")'/><span class="checkmark"></span></label>
+                    <div id="fexpEl2"><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br> 
+                    <label class="container1">I have worked in a Company<input type="checkbox" onchange='showAdditionalBox("cexpEl2")'/><span class="checkmark"></span></label>
+                    <div id="cexpEl2"><span class="fieldKey">| Company Name:</span><input id ="cname" class="text" title="Hello" type="text" placeholder="Enter your first name"/><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br>
+                </div>
+            </blockquote>
+            </div>
+            <div id="tertiaryWork">
+                <span class="fieldKey">Tertiary Occupation</span><select name="occupation" id="occu3" onchange="changeOccu3()"><option value="">-Select an Occupation-</option><option value="painter">Painter</option><option value="electrician">Electrician</option><option value="plumber">Plumber</option></select><br>
+                </blockquote><div id="occu-plumber-3">
+                    <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Household Works</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Full house Plumbing design</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> WaterPump Setup</label><br><br>
+                    <span class="fieldKey">Work-Nature: </span><br><br>
+                    <label class="container1">I have worked as a free lancer<input type="checkbox" onchange='showAdditionalBox("fexpPl3")'/><span class="checkmark"></span></label>
+                    <div id="fexpPl3"><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br> 
+                    <label class="container1">I have worked in a Company<input type="checkbox" onchange='showAdditionalBox("cexpPl3")'/><span class="checkmark"></span></label>
+                    <div id="cexpPl3"><span class="fieldKey">| Company Name:</span><input id ="cname" class="text" title="Hello" type="text" placeholder="Enter your first name"/><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br>
+                </div>
+                <div id="occu-painter-3">
+                    <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Wall Painting</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Artistic Painting</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Taller Building Painting</label><br><br>
+                    <span class="fieldKey">Work-Nature: </span><br><br>
+                    <label class="container1">I have worked as a free lancer<input type="checkbox" onchange='showAdditionalBox("fexpPa3")'/><span class="checkmark"></span></label>
+                    <div id="fexpPa3"><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br> 
+                    <label class="container1">I have worked in a Company<input type="checkbox" onchange='showAdditionalBox("cexpPa3")'/><span class="checkmark"></span></label>
+                    <div id="cexpPa3"><span class="fieldKey">| Company Name:</span><input id ="cname" class="text" title="Hello" type="text" placeholder="Enter your first name"/><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br>
+                </div>
+                <div id="occu-electrician-3">
+                    <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Full House Wiring</label>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Household Appliances Repair</label>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> New Fitting Installation</label><br><br>
+                    <span class="fieldKey">Work-Nature: </span><br><br>
+                    <label class="container1">I have worked as a free lancer<input type="checkbox" onchange='showAdditionalBox("fexpEl3")'/><span class="checkmark"></span></label>
+                    <div id="fexpEl3"><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br> 
+                    <label class="container1">I have worked in a Company<input type="checkbox" onchange='showAdditionalBox("cexpEl3")'/><span class="checkmark"></span></label>
+                    <div id="cexpEl3"><span class="fieldKey">| Company Name:</span><input id ="cname" class="text" title="Hello" type="text" placeholder="Enter your first name"/><span class="fieldKey">| Exp: </span><input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> years<input class="text" style="width:30px" type="text" placeholder="6xx   xxx"/> months</div><br><br>
+                </div>
+                </blockquote>
+            </div><center>
+            <span id ="addSec" onclick="showSecondary()"><img src="../Icons/grass-symbol-green-logo-png-favpng-G9DSJadU1kUbC1Skf5KGTPera.jpg" style="width:30px">Add Secondary Occupation</span>
+            <span id ="addTer" onclick="showTertiary()"><img src="../Icons/grass-symbol-green-logo-png-favpng-G9DSJadU1kUbC1Skf5KGTPera.jpg" style="width:30px">Add Tertiary Occupation</span>
+            <span id="remSec" onclick="removeSecondary()"><img src="../Icons/png-clipart-point-circle-angle-brand-font-minus-angle-text-thumbnail.png" style="width:20px"" style="width:20px">Remove Secondary Occupation</span>
+            <span id ="remTer" onclick="removeTertiary()"><img src="../Icons/png-clipart-point-circle-angle-brand-font-minus-angle-text-thumbnail.png" style="width:20px"" style="width:30px">Remove Tertiary Occupation</span>
+            </center>
+        </div>
+        <br><br>
+            <center><input class="button1" type="submit" value="Register"/></center>
+        </form>
+    </div>
+</body>    
+</html>
