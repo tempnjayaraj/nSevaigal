@@ -5,6 +5,9 @@
     <title>nSevaigal - Login</title>
     <script src="../script/mainPage.js"></script>
     <script src="../script/util.js"></script>
+    <script src="../script/job.js"></script>
+        <script src="../script/util.js"></script>
+        <link rel="stylesheet" href="../styles/job.css">
 </head>
 <body>
 <div class="menu">
@@ -37,7 +40,63 @@
     </div>
 </div>
 <div id="createJob" style="position:absolute;" class="content">
-    <img style="margin-left:auto;margin-right:auto;height:100%;" src="../Images/AddJob.jpg"/>
+    <form id="job1" action="">
+        <div>
+            <span id="domain" class="job">Domain</span><select id="type" name="DomainType" onchange="job()">
+                <option value="">--Select the Domain Type--</option>
+                <option value="Plumbing">Plumbing Works</option>
+                <option value="electricalwork">Electrical Works</option>
+                <option value="painting">Painting Works</option>
+                <option value="carpender">Carpending Works</option>
+                <option value="others">Other Works</option>
+            </select>
+        </div>
+            
+
+        <div id="plumb" class="options">
+            <span>
+                <input type="radio" name="Type" value="newinstallation" onclick="installation()">New Installation
+                <input type="radio" name="Type" value="repair" >Repair
+            </span>
+        </div>
+        <div id="paint" class="options">
+            <span>
+                <input type="radio" name="Type" value="wallpainting">Wall painting
+                <input type="radio" name="Type" value="materialpainting" >Material Painting
+            </span>
+        </div>
+        <div id="electric" class="options">
+            <span>
+                <input type="radio" name="Type" value="new">New_Work
+                <input type="radio" name="Type" value="repair" >Repair
+            </span>
+        </div>
+        <div id="carpender" class="options">
+            <span>
+                <input type="radio" name="Type" value="new">newtool
+                <input type="radio" name="Type" value="repair">Existing Repair
+            </span>
+        </div>
+        <div id="others" class="options">
+            <span>
+                <input type="radio" name="Type" value="new">others
+                <input type="radio" name="Type" value="repair">Existing Repair
+            </span>
+        </div>
+
+
+        <div id="plumbingoption" >
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" name="joblist" onchange="">
+                <option value="">--Select the Installation Type--</option>
+                <option value="tapfitting">Tap Fitting</option>
+                <option value="motorfitting">Motor Fitting</option>
+                <option value="showerfitting">Shower Fitting</option>
+                <option value="pipeline">Pipeline</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+    </form>
 </div>
 <div id="jobsInWork" style="position:absolute;" class="content">
     <img style="margin-left:auto;margin-right:auto;height:100%;" src="../Images/worker.jpg"/>
