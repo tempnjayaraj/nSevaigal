@@ -118,6 +118,40 @@
                 <option value="others">Others</option>
             </select>
         </div>
+        <span class="date">DueDate</span><input class="text" id ="dob" title="Hello" type="date"/><br>
+
+        <span id="dayofworking">
+            <label>Working Days</label>
+            <input type="radio" name="Type" value="oneday">One Day
+            <input type="radio" name="Type" value="twoorthreedays" >2-3 days
+            <input type="radio" name="Type" value="oneweek" >One weeks
+            <input type="radio" name="Type" value="moreweek" >More than a Week
+        </span>
+        <div>
+            <label>Use Different PhoneNumber
+                <input type="checkbox" id="phone" onclick="number()">
+            </label>
+            <input type="text" id="phonetxt" name="diffphone" >
+        </div>
+        <div>
+            <label>Use Different Address
+                <input type="checkbox" id="address" onclick="reAddress()">
+            </label>
+            <div id="readd" >
+                <label>Door No</label><input type="text"  name="doorno">
+                <label>Street Name</label><input type="text" name="streetno">
+                <label>Village/Town</label><input type="text" name="village/town">
+                <label>Post Office</label><input type="text" name="post">
+                <label>District</label><input type="text" name="district">
+                <label>State</label><input type="text" name="state">
+                <label>Zip Code</label><input type="text" name="zipcode">
+            </div>
+            
+        </div>
+        <div>
+            <input type="button" class="Submit" value="Apply">
+        </div>
+          
 
     </form>
 </div>

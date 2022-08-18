@@ -50,3 +50,19 @@ function repair(){
     showBlock(['plumbingoptionB']);
 
 }
+function number(){
+    
+    if(document.getElementById("phone").checked){
+        showBlock(['phonetxt']);
+    }else{
+        hide(['phonetxt']);
+    }
+    
+}
+function reAddress(){
+    if(document.getElementById("address").checked){
+        showBlock(['readd']);
+    }else{
+        hide(['readd']);
+    }
+}

@@ -12,3 +12,18 @@
     display: block;
 
 }
+#phonetxt{
+    visibility: hidden;
+    display: block;
+    padding: 4px;
+    height: 3%;
+    width: 11%;
+    top: 60px;
+    right: 30px;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif
+}
+#readd{
+    visibility: hidden;
+    display: block;
+}
