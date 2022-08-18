@@ -39,6 +39,18 @@
         <div class="menu-title">Logout</a></div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Create User Mohan -->
 <div id="createJob" style="position:absolute;" class="content">
     <form id="job1" action="">
         <div>
@@ -56,7 +68,7 @@
         <div id="plumb" class="options">
             <span>
                 <input type="radio" name="Type" value="newinstallation" onclick="installation()">New Installation
-                <input type="radio" name="Type" value="repair" >Repair
+                <input type="radio" name="Type" value="repair" onclick="repair()">Repair
             </span>
         </div>
         <div id="paint" class="options">
@@ -85,7 +97,7 @@
         </div>
 
 
-        <div id="plumbingoption" >
+        <div id="plumbingoptionA" >
             <span id="Installationfilter" class="Filter">Options</span><select id="option" name="joblist" onchange="">
                 <option value="">--Select the Installation Type--</option>
                 <option value="tapfitting">Tap Fitting</option>
@@ -95,9 +107,34 @@
                 <option value="others">Others</option>
             </select>
         </div>
+        <div id="plumbingoptionB" >
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" name="joblist" onchange="">
+                <option value="">--Select the Repair Type--</option>
+                <option value="tapfitting">Tap Repair</option>
+                <option value="motorfitting">Motor Repair</option>
+                <option value="showerfitting">Shower Repair</option>
+                <option value="pipeline">Pipeline Repair</option>
+                <option value="waterleakage">Water Leakage</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
 
     </form>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="jobsInWork" style="position:absolute;" class="content">
     <img style="margin-left:auto;margin-right:auto;height:100%;" src="../Images/worker.jpg"/>
 </div>

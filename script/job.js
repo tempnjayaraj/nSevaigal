@@ -39,5 +39,14 @@ function job(){
 
 }
 function installation(){
-    document.getElementById('plumbingoption').style.visibility= "visible";
+    
+    hide(['plumbingoptionB']);
+    showBlock(['plumbingoptionA']);
+    
+}
+function repair(){
+
+    hide(['plumbingoptionA']);
+    showBlock(['plumbingoptionB']);
+
 }
