@@ -32,3 +32,8 @@ function show(element,boolean){
         document.getElementById(element).style.display = 'block';
     }    
 }
+
+function popup(Message){
+    document.getElementById('pop').innerHTML=Message;
+    document.getElementById("myModal").style.display = "block";
+}

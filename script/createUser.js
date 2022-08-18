@@ -43,10 +43,7 @@ function removeTertiary(){
     showBlock(['secondaryWork']);
     showInline(['remSec','addTer']);
 } 
-function popup(Message){
-    document.getElementById('pop').innerHTML=Message;
-    document.getElementById("myModal").style.display = "block";
-}
+
 function validateForm(){
     var name= /^[A-Za-z][A-Za-z]{2,29}$/;
     var fname = document.getElementById('firstName').value;

@@ -1,66 +1,10 @@
 <html>
 <head>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1505/1505516.png">
+    <link rel="stylesheet" href="../styles/mainPage.css">
     <title>nSevaigal - Login</title>
-    <script>
-        var contentID = ['createJob'];
-    function showContent(content){
-        document.getElementById(content).style.visibility = 'visible';
-        document.getElementById(content).style.display = 'inline';
-    }
-    </script>
-    <style>
-       div.menu{
-            background-color: #152238;
-            width:15%;
-            height:100%;
-            padding: 1%;
-            margin-left:-1%;
-            margin-top:-1%;
-            float:left;
-       } 
-       div.menu-item{
-        width: 100%;
-        background-color: white;
-        height: 5%;
-        margin-top: 10px;
-        padding:1%;
-        border-radius: 20px;
-       }
-       div.menu-item:hover{
-        cursor:pointer;
-       }
-       div.menu-icon{
-        position: relative;
-        width: 20%;
-        height: 100%;
-        float: left;
-        left: 3%;
-       }
-       div.menu-title{
-        position: relative;
-        width: 75%;
-        height: 100%;
-        float: left;
-        padding:5px;
-        left: 2px;
-        top:3%;
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-weight: bold;
-       }
-       div.content{
-            position:absolute;
-            background-color: yellow;
-            width:81%;
-            height:100%;
-            padding: 1%;
-            margin-left:0.5%;
-            margin-top:-1%;
-            float:left;
-            visibility:hidden;
-            display:none;
-       }
-    </style>
+    <script src="../script/mainPage.js"></script>
+    <script src="../script/util.js"></script>
 </head>
 <body>
 <div class="menu">
@@ -71,7 +15,7 @@
         <div class="menu-icon"><img style="width:65%; padding:5px" src="../Icons/user.png"></div>
         <div class="menu-title">Mohan Raj&emsp;<img style="position:relative;top:5%;width:10%" src="../Icons/pencil.png"></div>
     </div>
-    <div class="menu-item">
+    <div class="menu-item" onclick="showContent('notifications')">
         <div class="menu-icon"><img style="width:65%; padding:5px" src="../Icons/bell.png"></div>
         <div class="menu-title">Notifications</div>
     </div>
@@ -83,7 +27,7 @@
         <div class="menu-icon"><img style="width:65%; padding:5px" src="../Icons/briefcase.png"></div>
         <div class="menu-title">Jobs in Work</div>
     </div>
-    <div class="menu-item">
+    <div class="menu-item" onclick="showContent('finishedJobs')">
         <div class="menu-icon"><img style="width:65%; padding:5px" src="../Icons/time-past.png"></div>
         <div class="menu-title">Finished Jobs</div>
     </div>
@@ -93,10 +37,16 @@
     </div>
 </div>
 <div id="createJob" style="position:absolute;" class="content">
-    Create Job Form
+    <img style="margin-left:auto;margin-right:auto;height:100%;" src="../Images/AddJob.jpg"/>
 </div>
 <div id="jobsInWork" style="position:absolute;" class="content">
-    No Details as of now
+    <img style="margin-left:auto;margin-right:auto;height:100%;" src="../Images/worker.jpg"/>
 </div>
+<div id="notifications" style="position:absolute;" class="content">
+    <img style="width:100%;" src="../Images/featured_notifications.jpg"/>
+</div> 
+<div id="finishedJobs" style="position:absolute;" class="content">
+    <img style="margin-left:auto;margin-right:auto;height:100%;" src="../Images/LastJobs.png"/>
+</div> 
 </body>    
 </html>
