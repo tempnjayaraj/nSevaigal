@@ -7,89 +7,69 @@ function changeImages(){
     }
 }
 
+function hide(element){
+    document.getElementById(element).style.visibility = 'hidden';
+    document.getElementById(element).style.display = 'none';
+}
+
+function showInline(element,boolean){
+    document.getElementById(element).style.visibility = 'visible';
+    if(boolean==true){
+        document.getElementById(element).style.display = 'inline';
+    }else{
+        document.getElementById(element).style.display = 'block';
+    }    
+}
+
 function changeOccu(num){
     const occupation = document.getElementById('occu'+num).value;
     if(occupation==""){
-        document.getElementById('occu-plumber-'+num).style.visibility = 'hidden';
-        document.getElementById('occu-plumber-'+num).style.display = 'none';
-        document.getElementById('occu-painter-'+num).style.visibility = 'hidden';
-        document.getElementById('occu-painter-'+num).style.display = 'none';
-        document.getElementById('occu-electrician-'+num).style.visibility = 'hidden';
-        document.getElementById('occu-electrician-'+num).style.display = 'none';
+        hide('occu-plumber-'+num); 
+        hide('occu-painter-'+num); 
+        hide('occu-electrician-'+num); 
     }
     else if(occupation=="plumber"){
-        document.getElementById('occu-plumber-'+num).style.visibility = 'visible';
-        document.getElementById('occu-plumber-'+num).style.display = 'block';
-        document.getElementById('occu-painter-'+num).style.visibility = 'hidden';
-        document.getElementById('occu-painter-'+num).style.display = 'none';
-        document.getElementById('occu-electrician-'+num).style.visibility = 'hidden';
-        document.getElementById('occu-electrician-'+num).style.display = 'none';
+        showInline('occu-plumber-'+num,false);
+        hide('occu-painter-'+num); 
+        hide('occu-electrician-'+num); 
     }else if(occupation=="painter"){
-        document.getElementById('occu-painter-'+num).style.visibility = 'visible';
-        document.getElementById('occu-painter-'+num).style.display = 'block';
-        document.getElementById('occu-plumber-'+num).style.visibility = 'hidden';
-        document.getElementById('occu-plumber-'+num).style.display = 'none';
-        document.getElementById('occu-electrician-'+num).style.visibility = 'hidden';
-        document.getElementById('occu-electrician-'+num).style.display = 'none';
+        hide('occu-plumber-'+num); 
+        showInline('occu-painter-'+num,false);
+        hide('occu-electrician-'+num); 
     }
     else if(occupation=="electrician"){
-        document.getElementById('occu-electrician-'+num).style.visibility = 'visible';
-        document.getElementById('occu-electrician-'+num).style.display = 'block';
-        document.getElementById('occu-painter-'+num).style.visibility = 'hidden';
-        document.getElementById('occu-painter-'+num).style.display = 'none';
-        document.getElementById('occu-plumber-'+num).style.visibility = 'hidden';
-        document.getElementById('occu-plumber-'+num).style.display = 'none';
+        hide('occu-plumber-'+num); 
+        hide('occu-painter-'+num); 
+        showInline('occu-electrician-'+num,false);
     }
 } 
 function showSecondary(){
-    document.getElementById('secondaryWork').style.visibility = 'visible';
-    document.getElementById('secondaryWork').style.display = 'block';
-    document.getElementById('remSec').style.visibility = 'visible';
-    document.getElementById('remSec').style.display = 'inline';
-    document.getElementById('addSec').style.visibility = 'hidden';
-    document.getElementById('addSec').style.display = 'none';
-    document.getElementById('addTer').style.visibility = 'visible';
-    document.getElementById('addTer').style.display = 'inline';
-    debugger;
+    showInline('secondaryWork',false);
+    showInline('remSec',true);
+    showInline('addTer',true);
+    hide('addSec');
 }   
 function removeSecondary(){
-    document.getElementById('secondaryWork').style.visibility = 'hidden';
-    document.getElementById('secondaryWork').style.display = 'none';
-    document.getElementById('addTer').style.visibility = 'hidden';
-    document.getElementById('addTer').style.display = 'none';
-    document.getElementById('remSec').style.visibility = 'hidden';
-    document.getElementById('remSec').style.display = 'none';
-    document.getElementById('addSec').style.visibility = 'visible';
-    document.getElementById('addSec').style.display = 'block';
-    debugger;
+    hide('secondaryWork');
+    hide('addTer');
+    hide('remSec');
+    showInline('addSec',false);
 } 
 function showTertiary(){
-    document.getElementById('tertiaryWork').style.visibility = 'visible';
-    document.getElementById('tertiaryWork').style.display = 'block';
-    document.getElementById('secondaryWork').style.visibility = 'visible';
-    document.getElementById('secondaryWork').style.display = 'block';
-    document.getElementById('remTer').style.visibility = 'visible';
-    document.getElementById('remTer').style.display = 'block';
-    document.getElementById('remSec').style.visibility = 'hidden';
-    document.getElementById('remSec').style.display = 'none';
-    document.getElementById('addSec').style.visibility = 'hidden';
-    document.getElementById('addSec').style.display = 'none';
-    document.getElementById('addTer').style.visibility = 'hidden';
-    document.getElementById('addTer').style.display = 'none';
+    showInline('tertiaryWork',false);
+    showInline('secondaryWork',false);
+    showInline('remTer',false);
+    hide('remSec');
+    hide('addSec');
+    hide('addTer');
 }   
 function removeTertiary(){
-    document.getElementById('tertiaryWork').style.visibility = 'hidden';
-    document.getElementById('tertiaryWork').style.display = 'none';
-    document.getElementById('secondaryWork').style.visibility = 'visible';
-    document.getElementById('secondaryWork').style.display = 'block';
-    document.getElementById('remTer').style.visibility = 'hidden';
-    document.getElementById('remTer').style.display = 'none';
-    document.getElementById('remSec').style.visibility = 'visible';
-    document.getElementById('remSec').style.display = 'inline';
-    document.getElementById('addSec').style.visibility = 'hidden';
-    document.getElementById('addSec').style.display = 'none';
-    document.getElementById('addTer').style.visibility = 'visible';
-    document.getElementById('addTer').style.display = 'inline';
+    hide('tertiaryWork');
+    showInline('secondaryWork',false);
+    hide('remTer');
+    showInline('remSec',true);
+    hide('addSec');
+    showInline('addTer',true);
 } 
 function popup(Message){
     document.getElementById('pop').innerHTML=Message;
@@ -241,12 +221,10 @@ function validateForm(){
 function showCompName(){
     var option = document.getElementsByName('workNature');
     if(option[1].checked){
-        document.getElementById('orgname').style.visibility='visible';
-        document.getElementById('orgname').style.display='block';
+        showInline('orgname',false);
     }
     else if(option[0].checked){
-        document.getElementById('orgname').style.visibility='hidden';
-        document.getElementById('orgname').style.display='none';
+        hide('orgname');
     }
 }
 function closeModal(){
@@ -261,11 +239,9 @@ if (event.target == modal) {
 }
 function showAdditionalBox(ExpId){
     if(document.getElementById(ExpId).style.visibility=='visible'){
-        document.getElementById(ExpId).style.visibility = 'hidden';
-        document.getElementById(ExpId).style.display = 'none';
+        hide(ExpId);
     }
     else {
-        document.getElementById(ExpId).style.visibility = 'visible';
-        document.getElementById(ExpId).style.display = 'inline';
+       showInline(ExpId,true);
     }
 }
