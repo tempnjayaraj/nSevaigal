@@ -6,127 +6,41 @@ function changeImages(){
         i=1;
     }
 }
-function worker(){
-    if(document.getElementById('worker').style.visibility=='visible'){
-        document.getElementById('worker').style.visibility = 'hidden';
-        document.getElementById('worker').style.display = 'none';
-    }
-    else {
-        document.getElementById('worker').style.visibility = 'visible';
-        document.getElementById('worker').style.display = 'block';
-    }
-}
 
-function changeOccu1(){
-    const occupation = document.getElementById('occu1').value;
+function changeOccu(num){
+    const occupation = document.getElementById('occu'+num).value;
     if(occupation==""){
-        document.getElementById('occu-plumber-1').style.visibility = 'hidden';
-        document.getElementById('occu-plumber-1').style.display = 'none';
-        document.getElementById('occu-painter-1').style.visibility = 'hidden';
-        document.getElementById('occu-painter-1').style.display = 'none';
-        document.getElementById('occu-electrician-1').style.visibility = 'hidden';
-        document.getElementById('occu-electrician-1').style.display = 'none';
+        document.getElementById('occu-plumber-'+num).style.visibility = 'hidden';
+        document.getElementById('occu-plumber-'+num).style.display = 'none';
+        document.getElementById('occu-painter-'+num).style.visibility = 'hidden';
+        document.getElementById('occu-painter-'+num).style.display = 'none';
+        document.getElementById('occu-electrician-'+num).style.visibility = 'hidden';
+        document.getElementById('occu-electrician-'+num).style.display = 'none';
     }
     else if(occupation=="plumber"){
-        document.getElementById('occu-plumber-1').style.visibility = 'visible';
-        document.getElementById('occu-plumber-1').style.display = 'block';
-        document.getElementById('occu-painter-1').style.visibility = 'hidden';
-        document.getElementById('occu-painter-1').style.display = 'none';
-        document.getElementById('occu-electrician-1').style.visibility = 'hidden';
-        document.getElementById('occu-electrician-1').style.display = 'none';
+        document.getElementById('occu-plumber-'+num).style.visibility = 'visible';
+        document.getElementById('occu-plumber-'+num).style.display = 'block';
+        document.getElementById('occu-painter-'+num).style.visibility = 'hidden';
+        document.getElementById('occu-painter-'+num).style.display = 'none';
+        document.getElementById('occu-electrician-'+num).style.visibility = 'hidden';
+        document.getElementById('occu-electrician-'+num).style.display = 'none';
     }else if(occupation=="painter"){
-        document.getElementById('occu-painter-1').style.visibility = 'visible';
-        document.getElementById('occu-painter-1').style.display = 'block';
-        document.getElementById('occu-plumber-1').style.visibility = 'hidden';
-        document.getElementById('occu-plumber-1').style.display = 'none';
-        document.getElementById('occu-electrician-1').style.visibility = 'hidden';
-        document.getElementById('occu-electrician-1').style.display = 'none';
+        document.getElementById('occu-painter-'+num).style.visibility = 'visible';
+        document.getElementById('occu-painter-'+num).style.display = 'block';
+        document.getElementById('occu-plumber-'+num).style.visibility = 'hidden';
+        document.getElementById('occu-plumber-'+num).style.display = 'none';
+        document.getElementById('occu-electrician-'+num).style.visibility = 'hidden';
+        document.getElementById('occu-electrician-'+num).style.display = 'none';
     }
     else if(occupation=="electrician"){
-        document.getElementById('occu-electrician-1').style.visibility = 'visible';
-        document.getElementById('occu-electrician-1').style.display = 'block';
-        document.getElementById('occu-painter-1').style.visibility = 'hidden';
-        document.getElementById('occu-painter-1').style.display = 'none';
-        document.getElementById('occu-plumber-1').style.visibility = 'hidden';
-        document.getElementById('occu-plumber-1').style.display = 'none';
+        document.getElementById('occu-electrician-'+num).style.visibility = 'visible';
+        document.getElementById('occu-electrician-'+num).style.display = 'block';
+        document.getElementById('occu-painter-'+num).style.visibility = 'hidden';
+        document.getElementById('occu-painter-'+num).style.display = 'none';
+        document.getElementById('occu-plumber-'+num).style.visibility = 'hidden';
+        document.getElementById('occu-plumber-'+num).style.display = 'none';
     }
 } 
-function changeOccu2(){
-    const occupation = document.getElementById('occu2').value;
-    if(occupation==""){
-        document.getElementById('occu-plumber-2').style.visibility = 'hidden';
-        document.getElementById('occu-plumber-2').style.display = 'none';
-        document.getElementById('occu-painter-2').style.visibility = 'hidden';
-        document.getElementById('occu-painter-2').style.display = 'none';
-        document.getElementById('occu-electrician-2').style.visibility = 'hidden';
-        document.getElementById('occu-electrician-2').style.display = 'none';
-    }
-    else if(occupation=="plumber"){
-        debugger;
-        document.getElementById('occu-plumber-2').style.visibility = 'visible';
-        document.getElementById('occu-plumber-2').style.display = 'block';
-        document.getElementById('occu-painter-2').style.visibility = 'hidden';
-        document.getElementById('occu-painter-2').style.display = 'none';
-        document.getElementById('occu-electrician-2').style.visibility = 'hidden';
-        document.getElementById('occu-electrician-2').style.display = 'none';
-    }else if(occupation=="painter"){
-        debugger;
-        document.getElementById('occu-painter-2').style.visibility = 'visible';
-        document.getElementById('occu-painter-2').style.display = 'block';
-        document.getElementById('occu-plumber-2').style.visibility = 'hidden';
-        document.getElementById('occu-plumber-2').style.display = 'none';
-        document.getElementById('occu-electrician-2').style.visibility = 'hidden';
-        document.getElementById('occu-electrician-2').style.display = 'none';
-    }
-    else if(occupation=="electrician"){
-        debugger;
-        document.getElementById('occu-electrician-2').style.visibility = 'visible';
-        document.getElementById('occu-electrician-2').style.display = 'block';
-        document.getElementById('occu-painter-2').style.visibility = 'hidden';
-        document.getElementById('occu-painter-2').style.display = 'none';
-        document.getElementById('occu-plumber-2').style.visibility = 'hidden';
-        document.getElementById('occu-plumber-2').style.display = 'none';
-    }
-} 
-function changeOccu3(){
-    const occupation = document.getElementById('occu3').value;
-    debugger;
-    if(occupation==""){
-        document.getElementById('occu-plumber-3').style.visibility = 'hidden';
-        document.getElementById('occu-plumber-3').style.display = 'none';
-        document.getElementById('occu-painter-3').style.visibility = 'hidden';
-        document.getElementById('occu-painter-3').style.display = 'none';
-        document.getElementById('occu-electrician-3').style.visibility = 'hidden';
-        document.getElementById('occu-electrician-3').style.display = 'none';
-    }
-    else if(occupation=="plumber"){
-        debugger;
-        document.getElementById('occu-plumber-3').style.visibility = 'visible';
-        document.getElementById('occu-plumber-3').style.display = 'block';
-        document.getElementById('occu-painter-3').style.visibility = 'hidden';
-        document.getElementById('occu-painter-3').style.display = 'none';
-        document.getElementById('occu-electrician-3').style.visibility = 'hidden';
-        document.getElementById('occu-electrician-3').style.display = 'none';
-    }else if(occupation=="painter"){
-        debugger;
-        document.getElementById('occu-painter-3').style.visibility = 'visible';
-        document.getElementById('occu-painter-3').style.display = 'block';
-        document.getElementById('occu-plumber-3').style.visibility = 'hidden';
-        document.getElementById('occu-plumber-3').style.display = 'none';
-        document.getElementById('occu-electrician-3').style.visibility = 'hidden';
-        document.getElementById('occu-electrician-3').style.display = 'none';
-    }
-    else if(occupation=="electrician"){
-        debugger;
-        document.getElementById('occu-electrician-3').style.visibility = 'visible';
-        document.getElementById('occu-electrician-3').style.display = 'block';
-        document.getElementById('occu-painter-3').style.visibility = 'hidden';
-        document.getElementById('occu-painter-3').style.display = 'none';
-        document.getElementById('occu-plumber-3').style.visibility = 'hidden';
-        document.getElementById('occu-plumber-3').style.display = 'none';
-    }
-} 
-
 function showSecondary(){
     document.getElementById('secondaryWork').style.visibility = 'visible';
     document.getElementById('secondaryWork').style.display = 'block';

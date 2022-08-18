@@ -71,10 +71,10 @@
             <span class="fieldKey">PIN Code</span><input class="text" id ="PINCode"  type="text" placeholder="6xx   xxx"/><br><br>
             
             <!-- <span class="fieldKey">Country</span><select name="cars" id="cars"><option value="">-Select Your Country-</option><option value="chn">Chennai</option><option value="tvr">Tiruvallur</option><option value="cgpl">Chengalpattu</option></select><br><br> -->
-            <label class="container">I wish to work as a partner<input id="isWorker" type="checkbox" onchange='worker()'/><span class="checkmark"></span></label>
+            <label class="container">I wish to work as a partner<input id="isWorker" type="checkbox" onchange='showAdditionalBox("worker")'/><span class="checkmark"></span></label>
             <div id="worker">
             <div id="primaryWork">
-                <span class="fieldKey">Primary Occupation</span><select name="occupation" id="occu1" onchange="changeOccu1()"><option value="">-Select an Occupation-</option><option value="painter">Painter</option><option value="electrician">Electrician</option><option value="plumber">Plumber</option></select><br>
+                <span class="fieldKey">Primary Occupation</span><select name="occupation" id="occu1" onchange="changeOccu(1)"><option value="">-Select an Occupation-</option><option value="painter">Painter</option><option value="electrician">Electrician</option><option value="plumber">Plumber</option></select><br>
                 <blockquote>
                 <div id="occu-plumber-1">
                     <span class="fieldKey">I know: </span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">

@@ -2,25 +2,101 @@
 <head>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1505/1505516.png">
     <title>nSevaigal - Login</title>
-    <style>
-       div.header{
-            background-color: #c2bbfa;
-            width:3%;
-            height:100%;
-            padding: 5px;
-       } 
-    </style>
     <script>
+        var contentID = ['createJob'];
+    function showContent(content){
+        document.getElementById(content).style.visibility = 'visible';
+        document.getElementById(content).style.display = 'inline';
+    }
     </script>
+    <style>
+       div.menu{
+            background-color: #152238;
+            width:15%;
+            height:100%;
+            padding: 1%;
+            margin-left:-1%;
+            margin-top:-1%;
+            float:left;
+       } 
+       div.menu-item{
+        width: 100%;
+        background-color: white;
+        height: 5%;
+        margin-top: 10px;
+        padding:1%;
+        border-radius: 20px;
+       }
+       div.menu-item:hover{
+        cursor:pointer;
+       }
+       div.menu-icon{
+        position: relative;
+        width: 20%;
+        height: 100%;
+        float: left;
+        left: 3%;
+       }
+       div.menu-title{
+        position: relative;
+        width: 75%;
+        height: 100%;
+        float: left;
+        padding:5px;
+        left: 2px;
+        top:3%;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-weight: bold;
+       }
+       div.content{
+            position:absolute;
+            background-color: yellow;
+            width:81%;
+            height:100%;
+            padding: 1%;
+            margin-left:0.5%;
+            margin-top:-1%;
+            float:left;
+            visibility:hidden;
+            display:none;
+       }
+    </style>
 </head>
 <body>
-    <div class="header">
-        <div class="header-icon">
-            <img style="width:100%" src="../Icons/information-icon-clip-art-at-clker-com-vector-clip-art-online--32.png"/>
-        </div>
-        <div class="header-icon">
-            <img style="width:100%" src="../Icons/information-icon-clip-art-at-clker-com-vector-clip-art-online--32.png"/>
-        </div>
+<div class="menu">
+    <div class="menu-item" style="height:40%;">
+        <img style="height:100%;border-radius: 10%;" src="../Images/Mohan.jpg"/>
     </div>
+    <div class="menu-item" style="background-color:yellow">
+        <div class="menu-icon"><img style="width:65%; padding:5px" src="../Icons/user.png"></div>
+        <div class="menu-title">Mohan Raj&emsp;<img style="position:relative;top:5%;width:10%" src="../Icons/pencil.png"></div>
+    </div>
+    <div class="menu-item">
+        <div class="menu-icon"><img style="width:65%; padding:5px" src="../Icons/bell.png"></div>
+        <div class="menu-title">Notifications</div>
+    </div>
+    <div class="menu-item" onclick="showContent('createJob')">
+        <div class="menu-icon"><img style="width:60%; padding:5px" src="../Icons/plus.png"></div>
+        <div class="menu-title">Create a new Job</div>
+    </div>
+    <div class="menu-item" onclick="showContent('jobsInWork')">
+        <div class="menu-icon"><img style="width:65%; padding:5px" src="../Icons/briefcase.png"></div>
+        <div class="menu-title">Jobs in Work</div>
+    </div>
+    <div class="menu-item">
+        <div class="menu-icon"><img style="width:65%; padding:5px" src="../Icons/time-past.png"></div>
+        <div class="menu-title">Finished Jobs</div>
+    </div>
+    <div class="menu-item" onclick="window.location='../login.html'">
+        <div class="menu-icon"><img style="width:65%; padding:5px" src="../Icons/sign-out-alt.png"></div>
+        <div class="menu-title">Logout</a></div>
+    </div>
+</div>
+<div id="createJob" style="position:absolute;" class="content">
+    Create Job Form
+</div>
+<div id="jobsInWork" style="position:absolute;" class="content">
+    No Details as of now
+</div>
 </body>    
 </html>

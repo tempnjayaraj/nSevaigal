@@ -29,7 +29,7 @@ span.fieldKey{
     font-size: 20px;
 }
 span.header{
-    color: #23159c;
+    color: #152238;
     font-size: 30px;
 }
 img.back{
@@ -43,7 +43,7 @@ img.back{
 } */
 input.button1 {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: #23159c; /* Green */
+    background-color: #152238; /* Green */
     border: none;
     color: white;
     padding: 16px 32px;
@@ -64,13 +64,13 @@ input.button1 {
     background-color: white;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: bold;
-    color: #23159c;
+    color: #152238;
 }
 .button2 {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: white; /* Green */
     border: none;
-    color: #23159c;
+    color: #152238;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -125,7 +125,7 @@ cursor: pointer;
 .button2:hover {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-weight: bold;
-    background-color: #23159c;
+    background-color: #152238;
     color: white;
 }
 .text{
