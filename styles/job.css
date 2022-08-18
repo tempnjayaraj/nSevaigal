@@ -2,7 +2,13 @@
     display: none;
     visibility: hidden;
 }
-#plumbingoption{
+#plumbingoptionA{
     visibility: hidden;
+    display: block;
+
+}
+#plumbingoptionB{
+    visibility: hidden;
+    display: block;
 
 }
