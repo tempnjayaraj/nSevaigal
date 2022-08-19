@@ -57,7 +57,7 @@
 <div id="createJob" style="position:absolute;" class="content">
     <form id="job1" action="">
         <div>
-            <span id="domain" class="job">Domain</span><select id="type" name="DomainType" onchange="job()">
+            <span id="domain" class="job">Domain</span><select id="type" class= "job" name="DomainType" onchange="job()">
                 <option value="">--Select the Domain Type--</option>
                 <option value="Plumbing">Plumbing Works</option>
                 <option value="electricalwork">Electrical Works</option>
@@ -101,7 +101,7 @@
 
 
         <div id="plumbingoptionA" >
-            <span id="Installationfilter" class="Filter">Options</span><select id="option" name="joblist" onchange="">
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" class="Filter" name="joblist" onchange="">
                 <option value="">--Select the Installation Type--</option>
                 <option value="tapfitting">Tap Fitting</option>
                 <option value="motorfitting">Motor Fitting</option>
@@ -111,7 +111,7 @@
             </select>
         </div>
         <div id="plumbingoptionB" >
-            <span id="Installationfilter" class="Filter">Options</span><select id="option" name="joblist" onchange="">
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" class="Filter" name="joblist" onchange="">
                 <option value="">--Select the Repair Type--</option>
                 <option value="tapfitting">Tap Repair</option>
                 <option value="motorfitting">Motor Repair</option>
@@ -121,22 +121,22 @@
                 <option value="others">Others</option>
             </select>
         </div>
-        <span class="date">DueDate</span><input class="text" id ="dob" title="Hello" type="date"/><br>
+        <span id="nal" class="date">DueDate</span><input id="mass" class="date" id ="dob" title="Hello" type="date"/><br>
 
         <span id="dayofworking">
-            <label>Working Days</label>
-            <input type="radio" name="Type" value="oneday">One Day
-            <input type="radio" name="Type" value="twoorthreedays" >2-3 days
-            <input type="radio" name="Type" value="oneweek" >One weeks
-            <input type="radio" name="Type" value="moreweek" >More than a Week
+            <label id="AAA" >Working Days</label>
+            <input  type="radio" name="Type" class="BB" value="oneday">One Day
+            <input  type="radio" name="Type" class="BB" value="twoorthreedays" >2-3 days
+            <input  type="radio" name="Type" class="BB" value="oneweek" >One weeks
+            <input  type="radio" name="Type" class="BB" value="moreweek" >More than a Week
         </span>
-        <div>
+        <div id="checkbox1" class="check">
             <label>Use Different PhoneNumber
                 <input type="checkbox" id="phone" onclick="number()">
             </label>
             <input type="text" id="phonetxt" name="diffphone" >
         </div>
-        <div>
+        <div id="checkbox2" class="check">
             <label>Use Different Address
                 <input type="checkbox" id="address" onclick="reAddress()">
             </label>

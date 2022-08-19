@@ -1,11 +1,87 @@
 .options{
     display: none;
     visibility: hidden;
+    position: absolute;
+    right: 68%;
+    top: 7%;
+    size: 30%;
+    font-size: large;
 }
+#domain{
+    position: relative;
+    font-size: 161%;
+    left: 15%;
+    font-weight: lighter;
+}
+#type{
+    position: relative;
+    width: 15%;
+    height: 3%;
+    font-size: 125%;
+    font-weight: lighter;
+    left: 17%;
+}
+.job{
+    position: relative;
+    align-content: center;
+    left:15%;
+}
+.Filter{
+    position: absolute;
+    align-content: center;
+    left: 22%;
+    top: 10%;
+    font-size: 126%;;
+}
+#Installationfilter{
+    position: absolute;
+    left: 16%;
+    top: 10%;
+    font-size: 166%;
+}
+.date{
+    position: absolute;
+    left: 23%;
+    top: 13%;
+    width: 8%;
+    font-size: 170%;
+
+}
+#nal{
+    position:absolute;
+    font-size: 150%;
+    left:16%;
+
+}
+#mass{
+    position: absolute;
+    font-size: 187%;
+    left: 23%;
+    width: 12%;
+}
+#dayofworking{
+    position : absolute;
+    left: 16%;
+    top: 22%;
+    font-size: 166%;
+
+}
+#AAA{
+    position: absolute;
+    font-size: 100%;
+    bottom: 129%;
+
+}
+.check{
+    position: relative;
+    font-size: larger;
+    
+}
+
 #plumbingoptionA{
     visibility: hidden;
     display: block;
-    
+
 
 }
 #plumbingoptionB{
