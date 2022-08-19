@@ -5,6 +5,7 @@
 #plumbingoptionA{
     visibility: hidden;
     display: block;
+    
 
 }
 #plumbingoptionB{
@@ -26,8 +27,8 @@
 #readd{
     visibility: hidden;
     display: block;
-    border-style: solid;
-    border-width: thin;
+    /* border-style: solid; */
+    /* border-width: thin; */
     width: 50%;
     height: 50%;
 
@@ -35,48 +36,112 @@
 }
 #door{
     position: relative;
-    font-size: 20px;
-    right: -16px;
-    font-style: initial;
-    bottom: -13px;
+    font-size: larger;
+    right: -3%;
+    font-weight: bolder;
+    bottom: -7%;
 }
 #kathavuen{
     position: relative;
-    padding: 5px;
-    width: 25%;
-    left: 5%;
-    right: 70%;
-    bottom: -14px;
-    font-size: medium;
+    
+    width: 22%;
+    height: 7%;
+    left: 2%;
+    right: 53%;
+    bottom: -6%;
+    font-size: large;
 }
 #street{
     position: relative;
-    font-size: 20px;
-    right: -47%;
-    top: -10%;
-    bottom: 2%;
-    font-style: initial;
+    display: inline;
+    font-size: larger;
+    left: 39%;
+    
+    font-weight: bolder;
+    
 }
 #theru{
     position: relative;
-    padding: 6px;
-    width: 29%;
-    top: -36px;
-    right: -51%;
-    bottom: -47px
+    
+    width: 32%;
+    height: 7%;
+    left: 3%;
+    font-size: large;
+}
+#vill{
+    position: relative;
+    font-size: larger;
+    right: -3%;
+    font-weight: bolder;
+    bottom: -7%;
 }
 #ooru{
-
+    position: relative;
+    width: 30%;
+    height: 7%;
+    left: 2%;
+    right: 53%;
+    bottom: -6%;
+    font-size: large;
+}
+#pos{
+    position: relative;
+    display: inline;
+    font-size: larger;
+    left: 50%;
+    
+    font-weight: bolder;
 }
 #thabal{
-
+    position: relative;
+    width: 32%;
+    height: 7%;
+    left: 3%;
+    font-size: large;
+}
+#dis{
+    position: relative;
+    font-size: larger;
+    right: -3%;
+    font-weight: bolder;
+    bottom: -7%;
 }
 #mavattam{
-
+    position: relative;
+    width: 30%;
+    height: 7%;
+    left: 2%;
+    right: 53%;
+    bottom: -6%;
+    font-size: large;
+}
+#sta{
+    position: relative;
+    display: inline;
+    font-size: larger;
+    left: 50%;
+    font-weight: bolder;
 }
 #maanilam{
-
+    position: relative;
+    width: 32%;
+    height: 7%;
+    left: 3%;
+    font-size: large;
+}
+#cod{
+    position: relative;
+    font-size: larger;
+    right: -3%;
+    font-weight: bolder;
+    bottom: -7%;
 }
 #pin{
-
+    position: relative;
+    width: 30%;
+    height: 7%;
+    left: 2%;
+    right: 53%;
+    bottom: -6%;
+    font-size: large;
 }
