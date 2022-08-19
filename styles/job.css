@@ -12,3 +12,33 @@
     display: block;
 
 }
+#phonetxt{
+    visibility: hidden;
+    display: block;
+    padding: 4px;
+    height: 3%;
+    width: 11%;
+    top: 60px;
+    right: 30px;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif
+}
+#readd{
+    visibility: hidden;
+    display: block;
+    border-style: solid;
+    border-width: thin;
+    width: 50%;
+    height: 50%;
+
+    
+}
+#kathavuen{
+    position:relative;
+    padding: 5px;
+    width: 20%;
+    left: 10%;
+    right: 70%;
+    bottom: 20px;
+    font-size: medium;
+}
