@@ -26,4 +26,19 @@
 #readd{
     visibility: hidden;
     display: block;
+    border-style: solid;
+    border-width: thin;
+    width: 50%;
+    height: 50%;
+
+    
+}
+#kathavuen{
+    position:relative;
+    padding: 5px;
+    width: 20%;
+    left: 10%;
+    right: 70%;
+    bottom: 20px;
+    font-size: medium;
 }
