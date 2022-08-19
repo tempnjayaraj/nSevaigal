@@ -5,6 +5,9 @@
     <title>nSevaigal - Login</title>
     <script src="../script/mainPage.js"></script>
     <script src="../script/util.js"></script>
+    <script src="../script/job.js"></script>
+        <script src="../script/util.js"></script>
+        <link rel="stylesheet" href="../styles/job.css">
 </head>
 <body>
 <div class="menu">
@@ -48,9 +51,136 @@
         <div class="menu-title">Logout</a></div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Create User Mohan -->
 <div id="createJob" style="position:absolute;" class="content">
-    <img style="margin-left:auto;margin-right:auto;height:100%;" src="../Images/AddJob.jpg"/>
+    <form id="job1" action="">
+        <div>
+            <span id="domain" class="job">Domain</span><select id="type" name="DomainType" onchange="job()">
+                <option value="">--Select the Domain Type--</option>
+                <option value="Plumbing">Plumbing Works</option>
+                <option value="electricalwork">Electrical Works</option>
+                <option value="painting">Painting Works</option>
+                <option value="carpender">Carpending Works</option>
+                <option value="others">Other Works</option>
+            </select>
+        </div>
+            
+
+        <div id="plumb" class="options">
+            <span>
+                <input type="radio" name="Type" value="newinstallation" onclick="installation()">New Installation
+                <input type="radio" name="Type" value="repair" onclick="repair()">Repair
+            </span>
+        </div>
+        <div id="paint" class="options">
+            <span>
+                <input type="radio" name="Type" value="wallpainting">Wall painting
+                <input type="radio" name="Type" value="materialpainting" >Material Painting
+            </span>
+        </div>
+        <div id="electric" class="options">
+            <span>
+                <input type="radio" name="Type" value="new">New_Work
+                <input type="radio" name="Type" value="repair" >Repair
+            </span>
+        </div>
+        <div id="carpender" class="options">
+            <span>
+                <input type="radio" name="Type" value="new">newtool
+                <input type="radio" name="Type" value="repair">Existing Repair
+            </span>
+        </div>
+        <div id="others" class="options">
+            <span>
+                <input type="radio" name="Type" value="new">others
+                <input type="radio" name="Type" value="repair">Existing Repair
+            </span>
+        </div>
+
+
+        <div id="plumbingoptionA" >
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" name="joblist" onchange="">
+                <option value="">--Select the Installation Type--</option>
+                <option value="tapfitting">Tap Fitting</option>
+                <option value="motorfitting">Motor Fitting</option>
+                <option value="showerfitting">Shower Fitting</option>
+                <option value="pipeline">Pipeline</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <div id="plumbingoptionB" >
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" name="joblist" onchange="">
+                <option value="">--Select the Repair Type--</option>
+                <option value="tapfitting">Tap Repair</option>
+                <option value="motorfitting">Motor Repair</option>
+                <option value="showerfitting">Shower Repair</option>
+                <option value="pipeline">Pipeline Repair</option>
+                <option value="waterleakage">Water Leakage</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <span class="date">DueDate</span><input class="text" id ="dob" title="Hello" type="date"/><br>
+
+        <span id="dayofworking">
+            <label>Working Days</label>
+            <input type="radio" name="Type" value="oneday">One Day
+            <input type="radio" name="Type" value="twoorthreedays" >2-3 days
+            <input type="radio" name="Type" value="oneweek" >One weeks
+            <input type="radio" name="Type" value="moreweek" >More than a Week
+        </span>
+        <div>
+            <label>Use Different PhoneNumber
+                <input type="checkbox" id="phone" onclick="number()">
+            </label>
+            <input type="text" id="phonetxt" name="diffphone" >
+        </div>
+        <div>
+            <label>Use Different Address
+                <input type="checkbox" id="address" onclick="reAddress()">
+            </label>
+            <div id="readd" >
+                <label>Door No</label>:<input type="text" id="kathavuen" name="doorno"><br><br>
+                <label>Street Name</label>:<input type="text" id="theru" name="streetno"><br><br>
+                <label>Village/Town</label><input type="text" name="village/town"><br><br>
+                <label>Post Office</label><input type="text" name="post"><br><br>
+                <label>District</label><input type="text" name="district"><br><br>
+                <label>State</label><input type="text" name="state"><br><br>
+                <label>Zip Code</label><input type="text" name="zipcode"><br><br>
+            </div>
+            
+        </div>
+        <div>
+            <input type="button" class="Submit" value="Apply">
+        </div>
+          
+
+    </form>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="jobsInWork" style="position:absolute;" class="content">
     <img style="margin-left:auto;margin-right:auto;height:100%;" src="../Images/worker.jpg"/>
 </div>
