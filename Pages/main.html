@@ -63,39 +63,39 @@
                 <option value="electricalwork">Electrical Works</option>
                 <option value="painting">Painting Works</option>
                 <option value="carpender">Carpending Works</option>
-                <option value="others">Other Works</option>
+                <option value="others">Other</option>
             </select>
         </div>
-            
+        
 
         <div id="plumb" class="options">
             <span>
-                <input type="radio" name="Type" value="newinstallation" onclick="installation()">New Installation
-                <input type="radio" name="Type" value="repair" onclick="repair()">Repair
+                <input type="radio" name="Aplumb" value="newinstallation" onclick="installation()">New Installation
+                <input type="radio" name="Aplumb" value="repair" onclick="repair()">Repair
             </span>
         </div>
         <div id="paint" class="options">
             <span>
-                <input type="radio" name="Type" value="wallpainting">Wall painting
-                <input type="radio" name="Type" value="materialpainting" >Material Painting
+                <input type="radio" name="Apaint" value="wallpainting" onclick="">Wall painting
+                <input type="radio" name="Apaint" value="materialpainting" >Material Painting
             </span>
         </div>
         <div id="electric" class="options">
             <span>
-                <input type="radio" name="Type" value="new">New_Work
-                <input type="radio" name="Type" value="repair" >Repair
+                <input type="radio" name="Aelectric" value="new" onclick="newWork()">New Work
+                <input type="radio" name="Aelectric" value="repair" onclick="elecRepair()">Repair
             </span>
         </div>
         <div id="carpender" class="options">
             <span>
-                <input type="radio" name="Type" value="new">newtool
-                <input type="radio" name="Type" value="repair">Existing Repair
+                <input type="radio" name="Acarpender" value="new">newtool
+                <input type="radio" name="Acarpender" value="repair">Existing Repair
             </span>
         </div>
         <div id="others" class="options">
             <span>
-                <input type="radio" name="Type" value="new">others
-                <input type="radio" name="Type" value="repair">Existing Repair
+                <input type="radio" name="Aother" value="new">others
+                <input type="radio" name="Aother" value="repair">Existing Repair
             </span>
         </div>
 
@@ -121,6 +121,33 @@
                 <option value="others">Others</option>
             </select>
         </div>
+        <div id="electricoptionA" >
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" class="Filter" name="joblist" onchange="">
+                <option value="">--Select the New Work Type--</option>
+                <option value="tapfitting">A</option>
+                <option value="motorfitting">B</option>
+                <option value="showerfitting">C</option>
+                <option value="pipeline">D</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <div id="electricoptionB" >
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" class="Filter" name="joblist" onchange="">
+                <option value="">--Select the Repair Type--</option>
+                <option value="tapfitting">AA</option>
+                <option value="motorfitting">BB</option>
+                <option value="showerfitting">CC</option>
+                <option value="pipeline">DD</option>
+                <option value="waterleakage">EE</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+
+
+
+
+
         <span id="nal" class="date">DueDate</span><input id="mass" class="date" id ="dob" title="Hello" type="date"/><br>
 
         <span id="dayofworking">
@@ -140,27 +167,27 @@
             <label>Use Different Address
                 <input type="checkbox" id="address" onclick="reAddress()">
             </label>
-            <div id="readd" >
+            <div id="readd" ><br>
                 <div id="door">
-                    <label  >DoorNo :</label><input type="text" id="kathavuen" name="doorno">
+                    <label  >DoorNo :</label><input type="text" id="kathavuen" name="doorno"><br><br>
                 </div>
                 <div id="street">
-                    <label >Street :</label><input type="text" id="theru" name="streetno">
+                    <label >Street :</label><input type="text" id="theru" name="streetno"><br><br>
                 </div>
                 <div id="vill">
-                    <label >Village/Town :</label><input type="text" id="ooru" name="village/town">
+                    <label >Village/Town :</label><input type="text" id="ooru" name="village/town"><br><br>
                 </div>
                 <div id="pos">   
-                    <label>Post :</label><input type="text" id="thabal" name="post">
+                    <label>Post :</label><input type="text" id="thabal" name="post"><br><br>
                 </div>
                 <div id="dis"> 
-                    <label>District :</label><input type="text" id="mavattam" name="district">
+                    <label>District :</label><input type="text" id="mavattam" name="district"><br><br>
                 </div>
                 <div id="sta">   
-                    <label>State :</label><input type="text" id="maanilam" name="state">
+                    <label>State :</label><input type="text" id="maanilam" name="state"><br><br>
                 </div>
                 <div id="cod">
-                    <label>PinCode :</label><input type="text" id="pin" name="zipcode">
+                    <label>PinCode :</label><input type="text" id="pin" name="zipcode"><br><br>
                 </div>
                 
                 
@@ -168,7 +195,7 @@
             
         </div>
 
-
+<!-- 
 
 
 
@@ -176,7 +203,7 @@
 
         <div>
             <input type="button" class="Submit" value="Apply">
-        </div>
+        </div> -->
           
 
     </form>

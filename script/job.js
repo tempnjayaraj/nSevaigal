@@ -7,17 +7,17 @@ function job(){
     // debugger;
     if (role ==""){
 
-        hide([ 'plumb', 'carpender', 'paint', 'electric' ]);
+        hide(['plumb', 'carpender', 'paint', 'electric']);
 
     }else if(role==jobrole[0]){
         // debugger;
         showBlock(['plumb']);
-        hide([ 'carpender', 'paint', 'electric', 'others']);
+        hide(['carpender', 'paint', 'electric', 'others']);
 
     }else if(role==jobrole[1]){
 
         showBlock(['electric']);   
-        hide([ 'plumb', 'carpender', 'paint', 'others']);
+        hide(['plumb', 'carpender', 'paint', 'others']);
 
     }else if(role==jobrole[2]){
 
@@ -50,6 +50,18 @@ function repair(){
     showBlock(['plumbingoptionB']);
 
 }
+
+function newWork(){
+    hide(['electricoptionB']);
+    showBlock(['electricoptionA']);
+}
+function elecRepair(){
+    hide(['electricoptionA']);
+    showBlock(['electricoptionB']);
+}
+
+
+
 function number(){
     
     if(document.getElementById("phone").checked){

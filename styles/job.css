@@ -73,11 +73,24 @@
 
 }
 .check{
-    position: relative;
-    font-size: larger;
+    position: absolute;
+    top: 35%;
+    left: 16%;
     
 }
+#checkbox1{
+    position: absolute;
+    left: 16%;
+    top: 27%;
+    font-size: 166%;
 
+}
+#checkbox2{
+    position: absolute;
+    left: 16%;
+    top: 34%;
+    font-size: 166%;
+}
 #plumbingoptionA{
     visibility: hidden;
     display: block;
@@ -89,12 +102,21 @@
     display: block;
 
 }
+
+#electricoptionA{
+    visibility: hidden;
+    display: block;
+}
+#electricoptionB{
+    visibility: hidden;
+    display: block;
+}
 #phonetxt{
     visibility: hidden;
     display: block;
     padding: 4px;
     height: 3%;
-    width: 11%;
+    width: 72%;
     top: 60px;
     right: 30px;
     font-size: large;
@@ -112,112 +134,92 @@
 }
 #door{
     position: relative;
-    font-size: larger;
-    right: -3%;
-    font-weight: bolder;
-    bottom: -7%;
+    font-size: 112%;
+    width: 400%;
+    font-weight: normal;
 }
 #kathavuen{
     position: relative;
-    
-    width: 22%;
-    height: 7%;
-    left: 2%;
-    right: 53%;
-    bottom: -6%;
+    width: 42%;
+    left: 9%;
     font-size: large;
 }
 #street{
     position: relative;
-    display: inline;
-    font-size: larger;
-    left: 39%;
-    
-    font-weight: bolder;
+    font-size: 112%;
+    bottom: 44%;
+    width: 400%;
+    font-weight: normal;
     
 }
 #theru{
     position: relative;
-    
-    width: 32%;
-    height: 7%;
-    left: 3%;
+    width: 42%;
+    left: 12%;
     font-size: large;
 }
 #vill{
     position: relative;
-    font-size: larger;
-    right: -3%;
-    font-weight: bolder;
-    bottom: -7%;
+    font-size: 112%;
+    bottom: 44%;
+    width: 400%;
+    font-weight: normal;
 }
 #ooru{
     position: relative;
-    width: 30%;
-    height: 7%;
+    width: 42%;
     left: 2%;
-    right: 53%;
-    bottom: -6%;
     font-size: large;
 }
 #pos{
     position: relative;
-    display: inline;
-    font-size: larger;
-    left: 50%;
-    
-    font-weight: bolder;
+    font-size: 112%;
+    bottom: 44%;
+    width: 400%;
+    font-weight: normal;
 }
 #thabal{
     position: relative;
-    width: 32%;
-    height: 7%;
-    left: 3%;
+    width: 42%;
+    left: 14%;
     font-size: large;
 }
 #dis{
     position: relative;
-    font-size: larger;
-    right: -3%;
-    font-weight: bolder;
-    bottom: -7%;
+    font-size: 112%;
+    bottom: 44%;
+    width: 400%;
+    font-weight: normal;
 }
 #mavattam{
     position: relative;
-    width: 30%;
-    height: 7%;
-    left: 2%;
-    right: 53%;
-    bottom: -6%;
+    width: 42%;
+    left: 11%;
     font-size: large;
 }
 #sta{
     position: relative;
-    display: inline;
-    font-size: larger;
-    left: 50%;
-    font-weight: bolder;
+    font-size: 112%;
+    bottom: 44%;
+    width: 400%;
+    font-weight: normal;
 }
 #maanilam{
     position: relative;
-    width: 32%;
-    height: 7%;
-    left: 3%;
-    font-size: large;
+    width: 42%;
+    left: 13%;
+    font-size: large;;
 }
 #cod{
     position: relative;
-    font-size: larger;
-    right: -3%;
-    font-weight: bolder;
-    bottom: -7%;
+    font-size: 112%;
+    bottom: 44%;
+    width: 400%;
+    font-weight: normal;
 }
 #pin{
     position: relative;
-    width: 30%;
-    height: 7%;
-    left: 2%;
-    right: 53%;
-    bottom: -6%;
+    width: 42%;
+    left: 8%;
     font-size: large;
 }
