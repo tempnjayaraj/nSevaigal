@@ -1,3 +1,4 @@
+
 .options{
     display: none;
     visibility: hidden;
@@ -6,6 +7,24 @@
     top: 7%;
     size: 30%;
     font-size: large;
+}
+#car{
+    display: none;
+    visibility: hidden;
+    
+}
+#otherDomain{
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: 22%;
+    top: 8%;
+}
+#other{
+    visibility: hidden; 
+    display: none;
+    width: 109%;
+    font-size: 139%;
 }
 #domain{
     position: relative;
@@ -42,11 +61,12 @@
 .date{
     position: absolute;
     left: 23%;
-    top: 13%;
+    top: 14.5%;
     width: 8%;
     font-size: 170%;
 
 }
+
 #nal{
     position:absolute;
     font-size: 150%;
@@ -102,12 +122,19 @@
     display: block;
 
 }
-
+#nets{
+    visibility: hidden;
+    display: block;
+}
 #electricoptionA{
     visibility: hidden;
     display: block;
 }
 #electricoptionB{
+    visibility: hidden;
+    display: block;
+}
+#homepaint{
     visibility: hidden;
     display: block;
 }

@@ -1,38 +1,47 @@
 
 
-const jobrole=["Plumbing", "electricalwork", "painting", "carpender", "others"];
+const jobrole=["Plumbing", "electricalwork", "painting", "carpender", "mosquitonet","others"];
 
 function job(){
     const role= document.getElementById("type").value;
     // debugger;
     if (role ==""){
 
-        hide(['plumb', 'carpender', 'paint', 'electric']);
+        hide(['plumb', 'carpender', 'paint', 'electric','other','net','otherDomain',
+                'plumbingoptionA','plumbingoptionB','electricoptionB',
+                'electricoptionA','homepaint']);
 
     }else if(role==jobrole[0]){
         // debugger;
         showBlock(['plumb']);
-        hide(['carpender', 'paint', 'electric', 'others']);
+        hide(['carpender', 'paint', 'electric', 'otherDomain','other','net']);
 
     }else if(role==jobrole[1]){
 
         showBlock(['electric']);   
-        hide(['plumb', 'carpender', 'paint', 'others']);
+        hide(['plumb', 'carpender', 'paint', 'otherDomain','other','net']);
 
     }else if(role==jobrole[2]){
 
         showBlock(['paint']);
-        hide(['plumb', 'electric', 'carpender', 'others']);
+        hide(['plumb', 'electric', 'carpender', 'otherDomain','other','net']);
 
 
     }else if(role==jobrole[3]){
         showBlock(['carpender']);
-        hide(['plumb', 'electric', 'paint','others']);
+        hide(['plumb', 'electric', 'paint','otherDomain','other','net']);
+
+    }else if(role ==jobrole[4]){
+
+        showBlock(['net']);
+        hide(['plumb', 'electric', 'paint','otherDomain','other']);
 
 
-    }else if(role==jobrole[4]){
-        showBlock(['others']);
-        hide(['plumb','electric', 'paint', 'carpender']);
+    }else if(role==jobrole[5]){
+        showBlock(['otherDomain','other']);
+        hide(['plumb','electric', 'paint', 'carpender','plumbingoptionA',
+                'plumbingoptionB','electricoptionA','electricoptionB',
+                'homepaint','net']);
 
     }
 
@@ -40,25 +49,40 @@ function job(){
 }
 function installation(){
     
-    hide(['plumbingoptionB']);
+    hide(['plumbingoptionB','electricoptionB','electricoptionA','homepaint','nets']);
     showBlock(['plumbingoptionA']);
     
 }
 function repair(){
 
-    hide(['plumbingoptionA']);
+    hide(['plumbingoptionA','electricoptionB','electricoptionA','homepaint','nets']);
     showBlock(['plumbingoptionB']);
 
 }
 
 function newWork(){
-    hide(['electricoptionB']);
+    hide(['electricoptionB','plumbingoptionB','plumbingoptionA','homepaint','nets']);
     showBlock(['electricoptionA']);
 }
 function elecRepair(){
-    hide(['electricoptionA']);
+    hide(['electricoptionA','plumbingoptionB','plumbingoptionA','homepaint','nets']);
     showBlock(['electricoptionB']);
 }
+function home(){
+    hide(['plumbingoptionB','electricoptionB','electricoptionA','plumbingoptionA','nets']);
+    showBlock(['homepaint']);
+    
+}
+function house(){
+    hide(['plumbingoptionB','electricoptionB','electricoptionA','plumbingoptionA','homepaint']);
+    showBlock(['nets']);
+    
+}
+
+
+
+
+
 
 
 

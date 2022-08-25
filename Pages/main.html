@@ -62,11 +62,15 @@
                 <option value="Plumbing">Plumbing Works</option>
                 <option value="electricalwork">Electrical Works</option>
                 <option value="painting">Painting Works</option>
-                <option value="carpender">Carpending Works</option>
+                <option value="carpender">Carpender</option>
+                <option value="civil">Civil Works</option>
+                <option value="mosquitonet">Mosquito Net Installation</option>
                 <option value="others">Other</option>
             </select>
         </div>
-        
+        <div id="otherDomain">
+            <input id="other" type="text" name="DomainOther">
+        </div>
 
         <div id="plumb" class="options">
             <span>
@@ -76,8 +80,8 @@
         </div>
         <div id="paint" class="options">
             <span>
-                <input type="radio" name="Apaint" value="wallpainting" onclick="">Wall painting
-                <input type="radio" name="Apaint" value="materialpainting" >Material Painting
+                <input type="radio" name="Apaint" value="wallpainting" onclick="home()" >Home
+                <input type="radio" name="Apaint" value="materialpainting" onclick="home()">Commerical
             </span>
         </div>
         <div id="electric" class="options">
@@ -87,11 +91,22 @@
             </span>
         </div>
         <div id="carpender" class="options">
+            <span id="car" class="Filter">Type</span><select id="option" class="Filter" name="joblist" onchange="">
+                <option value="">--Select the Carpentry Type--</option>
+                <option value="tapfitting">Wall Hanging</option>
+                <option value="motorfitting">Bench Creation</option>
+                <option value="showerfitting">Table Creation</option>
+                <option value="pipeline">Window Glass Change</option>
+                <option value="pipeline">Door Handle Work</option>
+            </select>
+        </div>
+        <div id="net" class="options">
             <span>
-                <input type="radio" name="Acarpender" value="new">newtool
-                <input type="radio" name="Acarpender" value="repair">Existing Repair
+                <input type="radio" name="Anet" value="wallpainting" onclick="house()" >Home
+                <input type="radio" name="Anet" value="materialpainting" onclick="house()">Commerical
             </span>
         </div>
+
         <div id="others" class="options">
             <span>
                 <input type="radio" name="Aother" value="new">others
@@ -107,7 +122,7 @@
                 <option value="motorfitting">Motor Fitting</option>
                 <option value="showerfitting">Shower Fitting</option>
                 <option value="pipeline">Pipeline</option>
-                <option value="others">Others</option>
+            
             </select>
         </div>
         <div id="plumbingoptionB" >
@@ -118,28 +133,44 @@
                 <option value="showerfitting">Shower Repair</option>
                 <option value="pipeline">Pipeline Repair</option>
                 <option value="waterleakage">Water Leakage</option>
-                <option value="others">Others</option>
+                
             </select>
         </div>
         <div id="electricoptionA" >
             <span id="Installationfilter" class="Filter">Options</span><select id="option" class="Filter" name="joblist" onchange="">
                 <option value="">--Select the New Work Type--</option>
-                <option value="tapfitting">A</option>
-                <option value="motorfitting">B</option>
-                <option value="showerfitting">C</option>
-                <option value="pipeline">D</option>
-                <option value="others">Others</option>
+                <option value="tapfitting">Tube Light Fitting</option>
+                <option value="motorfitting">Compound Light Fitting</option>
+                <option value="showerfitting">External Power Line extension</option>
+                <option value="pipeline">Fan Installation</option>
+                <option value="others">External Switch Board</option>
             </select>
         </div>
         <div id="electricoptionB" >
             <span id="Installationfilter" class="Filter">Options</span><select id="option" class="Filter" name="joblist" onchange="">
                 <option value="">--Select the Repair Type--</option>
-                <option value="tapfitting">AA</option>
-                <option value="motorfitting">BB</option>
-                <option value="showerfitting">CC</option>
-                <option value="pipeline">DD</option>
-                <option value="waterleakage">EE</option>
-                <option value="others">Others</option>
+                <option value="tapfitting">Fan Repair</option>
+                <option value="motorfitting">Coil Work</option>
+                <option value="showerfitting">Mixer Grinder Repair</option>
+                <option value="showerfitting">Home Appliance Repair</option>
+            </select>
+        </div>
+        <div id="homepaint" >
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" class="Filter" name="joblist" onchange="">
+                <option value="">--Select the Type--</option>
+                <option value="whitewash">White Wash</option>
+                <option value="wallcolor">Wall Coloring </option>
+                <option value="white&color">Both White and Color</option>
+                <option value="picture">Picture Painting</option>
+            </select>
+        </div>
+        <div id="nets">
+            <span id="Installationfilter" class="Filter">Options</span><select id="option" class="Filter" name="joblist" onchange="">
+                <option value="">--Select the Type--</option>
+                <option value="whitewash">For Doors</option>
+                <option value="wallcolor">For Windows</option>
+                <option value="white&color">Both Door and Windows</option>
+
             </select>
         </div>
 
