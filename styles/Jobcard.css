@@ -1,0 +1,180 @@
+#jobCard{
+    position: relative;
+    top: 11%;
+    left: 35%;
+    border: 2px solid rgb(196, 240, 125);
+    width: 45%;
+    height: 80%;
+    
+}
+#jobtitle{
+    position: relative;
+    width: 10%;
+    height: 5%;
+    top:-3%;
+    left:2%;
+
+}
+#job{
+    position: relative;
+    left: 21%;
+    top: 23%;
+    
+}
+#DOMAIN{
+    position: relative;
+    width: 300%;
+    height: 100%;
+    font-size: 250%;
+}
+
+
+#type{
+    position: relative;
+    font-size: 200%;
+    left: 8%;
+    bottom: 140px;
+ }
+#jtype{
+    position: relative;
+    width: 34%;
+    height: 5%;
+    font-size: larger;
+    bottom: 1px;
+    left: 4%;
+}
+
+#detail{
+    position: relative;
+    font-size: 200%;
+    left: 4%;
+    bottom: 102px;
+    
+}
+#jdetails{
+    position: relative;
+    width: 34%;
+    height: 5%;
+    font-size: larger;
+    left: 31px;
+}
+
+
+#domestic{
+    position: relative;
+    font-size: 200%;
+    left: 7%;
+    bottom: 55px;
+    
+}
+#jdomestic{
+    position: relative;
+    width: 34%;
+    height: 5%;
+    font-size: larger;
+    left: 31px;
+}
+
+#date{
+    position: relative;
+    font-size: 200%;
+    left: 7%;
+    bottom: 9px;
+}
+#jwhen1{
+    position: relative;
+    width: 20%;
+    height: 5%;
+    font-size: larger;
+    left: 1px;
+}
+#jwhen2{
+    position: relative;
+    width: 20%;
+    height: 5%;
+    font-size: larger;
+    left: 1px;
+}   
+#where{
+    position: relative;
+    font-size: 200%;
+    left: 13%;
+    top: 27px;
+    
+}
+#jwhere{
+    position: relative;
+    width: 34%;
+    height: 22%;
+    font-size: larger;
+    left: 22px;
+}
+
+#postby{
+    position: relative;
+    font-size: 200%;
+    left: 7%;
+    top: 57px;
+    
+}   
+#jpostby{
+    position: relative;
+    width: 34%;
+    height: 5%;
+    font-size: larger;
+    left: 31px;
+}
+
+#poston{
+
+    position: relative;
+    font-size: 200%;
+    left: 7%;
+    top: 90px;
+
+}
+#jpostedon{
+    position: relative;
+    width: 34%;
+    height: 5%;
+    font-size: larger;
+    left: 31px;
+}
+#but1{
+
+    position: absolute;
+    top: 130%;
+    left: 40%;
+    
+}
+#button1{
+    position: absolute;
+    font-size: large;
+    width: 73px;
+    height: 26px;
+    /* background-color: #e7e7e7; */
+}
+#button1:hover {
+    background-color: #3baefa;
+    border: 2px solid #77837c;
+    color: rgb(0, 0, 0);
+    
+  }
+#but2{
+    position: absolute;
+    top: 130%;
+    left: 49%;
+
+}
+#button2{
+    position: absolute;
+    font-size: large;
+    width: 73px;
+    height: 26px;
+    /* background-color: #36e671; */
+}
+#button2:hover {
+    background-color: #28f100;
+    border: 2px solid #77837c;
+    color: rgb(0, 0, 0);
+  }

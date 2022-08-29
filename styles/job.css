@@ -13,6 +13,11 @@
     visibility: hidden;
     
 }
+#carpender{
+    display: none;
+    visibility: hidden;
+    right:79%;
+}
 #otherDomain{
     display: none;
     visibility: hidden;

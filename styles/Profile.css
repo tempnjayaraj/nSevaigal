@@ -1,0 +1,9 @@
+#outer{
+    background-color: hsl(91, 94%, 67%);
+    width:50%;
+    height:100%;
+    padding: 1%;
+    margin-left:-1%;
+    margin-top:-1%;
+    float:left;
+} 

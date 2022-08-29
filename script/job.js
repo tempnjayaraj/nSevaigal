@@ -49,32 +49,32 @@ function job(){
 }
 function installation(){
     
-    hide(['plumbingoptionB','electricoptionB','electricoptionA','homepaint','nets']);
+    hide(['plumbingoptionB','electricoptionB','electricoptionA','homepaint','nets','car','carpender']);
     showBlock(['plumbingoptionA']);
     
 }
 function repair(){
 
-    hide(['plumbingoptionA','electricoptionB','electricoptionA','homepaint','nets']);
+    hide(['plumbingoptionA','electricoptionB','electricoptionA','homepaint','nets','carpender']);
     showBlock(['plumbingoptionB']);
 
 }
 
 function newWork(){
-    hide(['electricoptionB','plumbingoptionB','plumbingoptionA','homepaint','nets']);
+    hide(['electricoptionB','plumbingoptionB','plumbingoptionA','homepaint','nets','carpender']);
     showBlock(['electricoptionA']);
 }
 function elecRepair(){
-    hide(['electricoptionA','plumbingoptionB','plumbingoptionA','homepaint','nets']);
+    hide(['electricoptionA','plumbingoptionB','plumbingoptionA','homepaint','nets','carpender']);
     showBlock(['electricoptionB']);
 }
 function home(){
-    hide(['plumbingoptionB','electricoptionB','electricoptionA','plumbingoptionA','nets']);
+    hide(['plumbingoptionB','electricoptionB','electricoptionA','plumbingoptionA','nets','carpender']);
     showBlock(['homepaint']);
     
 }
 function house(){
-    hide(['plumbingoptionB','electricoptionB','electricoptionA','plumbingoptionA','homepaint']);
+    hide(['plumbingoptionB','electricoptionB','electricoptionA','plumbingoptionA','homepaint','carpender']);
     showBlock(['nets']);
     
 }
