@@ -1,0 +1,74 @@
+body{
+    background-color: black;
+}
+#img{
+    position:relative;
+    border-radius: 200px;
+    left: 80px;
+}
+#name{
+    position: relative;
+    background-color: aqua;
+    border-radius: 10px;
+    top:60px;
+    right:250px;
+    width: 300px;
+    height:40px;
+}
+#dom{
+    position: relative;
+    background-color: red;
+    border-radius: 10px;
+    top: 120px;
+    right:555px;
+    width: 300px;
+    height:40px;
+}
+#ex{
+    position: relative;
+    background-color:pink;
+    border-radius: 10px;
+    top: 180px;
+    right: 860px;
+    width: 130px;
+    height:45px;
+}
+#age{
+    position: relative;
+    background-color:yellow;
+    border-radius: 10px;
+    top: 180px;
+    right: 825px;
+    width: 130px;
+    height:45px;
+    
+}
+#add{
+    position: relative;
+    background-color:green;
+    border-radius: 10px;
+    top: 200px;
+    left: 100px;
+    width: 300px;
+    height:150px;
+}
+#can{
+    position: relative;
+    background-color: blueviolet;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    right: -750px;
+    top: 197px;
+} 
+ #con{
+    position: relative;
+    background-color: mediumblue;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    right: -900px;
+    top: 197px;
+}
+
+
